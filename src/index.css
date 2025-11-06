@@ -1,0 +1,45 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Global styles for better form UX */
+* {
+  box-sizing: border-box;
+}
+
+/* Set Roboto as default font */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Global input focus styles */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+select:focus {
+  outline: none !important;
+  border-color: #815A04 !important;
+  box-shadow: 0 0 0 3px rgba(129, 90, 4, 0.1) !important;
+}
+
+/* Global button cursor styles */
+button {
+  cursor: pointer !important;
+}
+
+button:disabled {
+  cursor: not-allowed !important;
+}
+
+/* Disable browser autocomplete styling */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  -webkit-text-fill-color: #374151 !important;
+}
